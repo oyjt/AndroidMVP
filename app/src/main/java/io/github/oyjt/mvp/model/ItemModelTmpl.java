@@ -1,9 +1,11 @@
-package io.github.oyjt.mvp.main;
+package io.github.oyjt.mvp.model;
 
 import android.os.Handler;
 
 import java.util.Arrays;
 import java.util.List;
+
+import io.github.oyjt.mvp.model.ItemModel;
 
 /**
  * Created by ouyang on 2016/4/22.

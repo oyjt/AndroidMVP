@@ -1,10 +1,13 @@
-package io.github.oyjt.mvp.login;
+package io.github.oyjt.mvp.presenter;
+
+import io.github.oyjt.mvp.model.LoginModel;
+import io.github.oyjt.mvp.model.LoginModelImpl;
+import io.github.oyjt.mvp.view.LoginView;
 
 /**
- * Created by ouyang on 2016/4/22.
+ * Created by ouyang on 2016/11/24
  */
 public class LoginPresenterImpl implements LoginPresenter, LoginModel.OnLoginFinishedListener {
-
     private LoginView mLoginView;
     private LoginModel mLoginModel;
 
@@ -29,7 +32,7 @@ public class LoginPresenterImpl implements LoginPresenter, LoginModel.OnLoginFin
 
     @Override
     public void onEmailError() {
-        if(mLoginView != null){
+        if (mLoginView != null) {
             mLoginView.setEmailError();
             mLoginView.hideProgress();
         }
@@ -37,7 +40,7 @@ public class LoginPresenterImpl implements LoginPresenter, LoginModel.OnLoginFin
 
     @Override
     public void onPasswordError() {
-        if(mLoginView != null){
+        if (mLoginView != null) {
             mLoginView.setPasswordError();
             mLoginView.hideProgress();
         }
@@ -45,7 +48,7 @@ public class LoginPresenterImpl implements LoginPresenter, LoginModel.OnLoginFin
 
     @Override
     public void onSuccess() {
-        if(mLoginView != null){
+        if (mLoginView != null) {
             mLoginView.navigateToHome();
         }
     }

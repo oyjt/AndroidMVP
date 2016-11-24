@@ -1,4 +1,4 @@
-package io.github.oyjt.mvp.main;
+package io.github.oyjt.mvp.model;
 
 import java.util.List;
 

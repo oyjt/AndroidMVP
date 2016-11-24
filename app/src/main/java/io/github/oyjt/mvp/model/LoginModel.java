@@ -1,4 +1,4 @@
-package io.github.oyjt.mvp.login;
+package io.github.oyjt.mvp.model;
 
 /**
  * Created by ouyang on 2016/4/22.

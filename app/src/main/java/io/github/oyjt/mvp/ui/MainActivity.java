@@ -1,4 +1,4 @@
-package io.github.oyjt.mvp.main;
+package io.github.oyjt.mvp.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +14,9 @@ import android.widget.Toast;
 import java.util.List;
 
 import io.github.oyjt.mvp.R;
+import io.github.oyjt.mvp.presenter.MainPresenter;
+import io.github.oyjt.mvp.presenter.MainPresenterImpl;
+import io.github.oyjt.mvp.view.MainView;
 
 public class MainActivity extends AppCompatActivity implements MainView,AdapterView.OnItemClickListener {
 

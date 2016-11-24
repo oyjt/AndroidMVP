@@ -1,12 +1,17 @@
-package io.github.oyjt.mvp.main;
+package io.github.oyjt.mvp.presenter;
+
 
 import java.util.List;
 
-/**
- * Created by ouyang on 2016/4/22.
- */
-public class MainPresenterImpl implements MainPresenter,ItemModel.OnFinishedListener {
+import io.github.oyjt.mvp.model.ItemModel;
+import io.github.oyjt.mvp.model.ItemModelTmpl;
+import io.github.oyjt.mvp.view.MainView;
 
+/**
+* Created by ouyang on 2016/11/24
+*/
+
+public class MainPresenterImpl implements MainPresenter,ItemModel.OnFinishedListener{
     private MainView mMainView;
     private ItemModel mItemModel;
 
@@ -43,4 +48,5 @@ public class MainPresenterImpl implements MainPresenter,ItemModel.OnFinishedList
             mMainView.hideProgress();
         }
     }
+
 }

@@ -1,4 +1,4 @@
-package io.github.oyjt.mvp.login;
+package io.github.oyjt.mvp.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,10 @@ import android.view.View;
 import android.widget.EditText;
 
 import io.github.oyjt.mvp.R;
-import io.github.oyjt.mvp.main.MainActivity;
+import io.github.oyjt.mvp.ui.MainActivity;
+import io.github.oyjt.mvp.presenter.LoginPresenter;
+import io.github.oyjt.mvp.presenter.LoginPresenterImpl;
+import io.github.oyjt.mvp.view.LoginView;
 
 /**
  * Created by ouyang on 2016/4/22.
