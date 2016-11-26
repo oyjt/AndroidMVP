@@ -10,7 +10,7 @@ import io.github.oyjt.mvp.model.ItemModel;
 /**
  * Created by ouyang on 2016/4/22.
  */
-public class ItemModelTmpl implements ItemModel {
+public class ItemModelImpl implements ItemModel {
     @Override
     public void getItems(final OnFinishedListener listener) {
         new Handler().postDelayed(new Runnable() {

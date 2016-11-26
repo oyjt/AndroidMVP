@@ -4,7 +4,7 @@ package io.github.oyjt.mvp.presenter;
 import java.util.List;
 
 import io.github.oyjt.mvp.model.ItemModel;
-import io.github.oyjt.mvp.model.ItemModelTmpl;
+import io.github.oyjt.mvp.model.ItemModelImpl;
 import io.github.oyjt.mvp.view.MainView;
 
 /**
@@ -17,7 +17,7 @@ public class MainPresenterImpl implements MainPresenter,ItemModel.OnFinishedList
 
     public MainPresenterImpl(MainView mainView) {
         mMainView = mainView;
-        mItemModel = new ItemModelTmpl();
+        mItemModel = new ItemModelImpl();
     }
 
     @Override
